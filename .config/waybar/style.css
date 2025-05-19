@@ -1,0 +1,175 @@
+* {
+	font-family: JetBrainsMono Nerd Font, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+/* Colors: GTK wtf is this css shit??? */
+
+/* Background colors */
+/* @define-color dark-main-1 #1a1b26; - */
+/* @define-color dark-main-2 #24283b; - */
+/* @define-color dark-main-3 #414868; - */
+/* @define-color dark-main-4 #565f89; - */
+
+/* Text/Highlight colors */
+/* @define-color light-main-1 #6d779b; */
+/* @define-color light-main-2 #9aa5ce; - */
+/* @define-color light-main-3 #a9b1d6; - */
+/* @define-color light-main-4 #c0caf5; */
+
+/* Workspace alert color */
+/* @define-color alert-main-1 #f04061; */
+/* @define-color alert-main-2 #f7768e; */
+
+/* ViolinWP colors */
+/* @define-color wallpaper-main-1 #cf43AA */
+/* @define-color wallpaper-main-2 #5926c4 */
+/* @define-color wallpaper-dark-1 #370859 */
+
+/* SpacemanWP colors */
+/* @define-color wallpaper-main-1 #003bd0 */
+/* @define-color wallpaper-main-2 #396af1 */
+/* @define-color wallpaper-main-3 #b2c6f3 */
+
+
+
+/* Main bar: */
+window#waybar {
+	background-color: #1a1b26;
+	border-width: 2px;
+	border-style: solid;
+	border-image: linear-gradient(178deg, #b2c6f3 0%, #396af1 100%) 1 stretch;
+	border-radius: 0px;
+	color: #a9b1d6;
+	padding: 10px;
+} 
+
+/* Workspaces */
+#workspaces button {
+	/* Defualts fix */
+	background-color: transparent;
+	border: 2 solid #414868;
+	border-radius: 0px;
+	color: #414868;
+	margin: 10px 5px;
+	padding: 0px 8px;
+}
+
+#workspaces button:hover {
+	/* Defualts fix */
+    box-shadow: inherit;
+    text-shadow: inherit;
+	background: inherit;
+
+	/* Hover effect */
+    border: 2 solid #565f89;
+	color: #565f89;
+	transition: border 0.2s, color 0.2s;
+}
+
+#workspaces button.active {
+	/* Defualts fix */
+    box-shadow: inherit;
+    text-shadow: inherit;
+	background: inherit;
+
+	/* Active effect */
+    border: 2 solid #6d779b;
+	color: #a9b1d6;
+	transition: border 0.5s, color 0.5s;
+}
+
+#workspaces button.urgent {
+	/* Defualts fix */
+    box-shadow: inherit;
+    text-shadow: inherit;
+	background: inherit;
+
+	/* Active effect */
+    animation: blinking 0.2s ease-in-out infinite alternate;
+}
+
+#workspaces button.urgent:hover {
+	/* Defualts fix */
+    box-shadow: inherit;
+    text-shadow: inherit;
+	background: inherit;
+
+	/* Active effect */
+	animation: blinking 0.2s ease-in-out infinite alternate;
+	/* For some reason fixes gray blinking on hover??? */
+	border: 2 solid #f04061;
+	color: #f04061;
+}
+
+/* Blinking urgent effect */
+@keyframes blinking {
+	from {
+		border: 2 solid #f04061;
+		color: #f04061;
+	}
+	to {
+		border: 2 solid #f7768e;
+		color: #f7768e;
+	}
+}
+
+/* Module theming */
+#clock {
+	background-color: transparent;
+	border: 2 solid #6d779b;
+	color: #a9b1d6;
+	margin: 10px 5px 10px 10px;
+	padding: 0px 10px;
+}
+
+#window {
+	color: #6d779b;
+}
+
+#cpu,
+#memory,
+#pulseaudio,
+#tray {
+	background-color: transparent;
+	border: 2 solid #6d779b;
+	color: #a9b1d6;
+}
+
+/* Custom padding/margins per module accounting for nerdfont */
+#cpu {
+	margin: 10px 10px 10px 0px;
+	padding: 0px 6px 0px 10px;
+}
+
+#memory {
+	margin: 10px 10px 10px 0px;
+	padding: 0px 10px 0px 10px;
+}
+
+#pulseaudio {
+	margin: 10px 10px 10px 0px;
+	padding: 0px 12px 0px 10px;
+}
+
+#tray {
+	margin: 10px 10px 10px 0px;
+	padding: 0px 10px;
+}
+
+/* Module hover theming */
+#pulseaudio:hover {
+	background-color: #24283b;
+	border-color: #9aa5ce;
+	color: #c0caf5;
+}
+
+/* Tray shit IDK */
+#tray > .passive {
+	-gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+	-gtk-icon-effect: highlight;
+	background-color: #eb4d4b;
+}

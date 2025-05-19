@@ -1,0 +1,62 @@
+/* 
+##################
+# WOFI STYLE.CSS #
+##################
+*/
+
+#window {
+    background-color: #1a1b26;
+    border-width: 2px;
+	border-style: solid;
+	border-image: linear-gradient(135deg, #b2c6f3 0%, #396af1 100%) 1 stretch;
+	border-radius: 0px;
+    color: #a9b1d6;
+    font-size: 16px;
+}
+
+#input {
+    background-color: #1a1b26;
+    border: 2px solid #6d779b;
+    border-radius: 0px;
+	color: #a9b1d6;
+    margin: 10px 10px 10px 10px;
+}
+
+#outer-box {
+    padding: 0px 0px 10px 0px;
+}
+
+#inner-box {
+    background-color: transparent;
+    /* border: 2px solid #6d779b; */
+    border-radius: 0px;
+	color: #a9b1d6;
+    margin: 0px 10px 10px 10px;
+}
+
+#entry {
+    color: #a9b1d6;
+} 
+:selected {
+    background-color: #24283b;
+    border: 2px solid #2ac3de;
+    border-radius: 0px;
+    color: #c0caf5;
+}
+
+#img,
+#text {
+    margin: 0px 0px 0px 5px;
+}
+
+#img,
+#text:selected {
+    border: none;
+    color: #c0caf5;
+}
+
+
+#expander-box {
+    background-color: #1a1b26;
+    color: #a9b1d6;
+}

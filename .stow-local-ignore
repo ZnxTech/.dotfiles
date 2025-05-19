@@ -1,0 +1,15 @@
+# gnu stow local ignore list
+
+# vscode
+\.vscode
+
+# git
+\.git
+\.gitignore
+\.gitmodules
+
+# info text
+^/README.*
+^/LICENSE.*
+^/COPYING
+
