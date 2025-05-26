@@ -13,6 +13,7 @@
     // Modules ordering:
     "modules-left": [
         "clock",
+        "hyprland/language",
         "hyprland/workspaces",
         "custom/media"
     ],
@@ -30,6 +31,11 @@
     "tray": {
         "icon-size": 25,
         "spacing": 5
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "English [en-us]",
+        "format-he": "Hebrew [he-il]"
     },
     "clock": {
         // "timezone": "America/New_York",
