@@ -40,7 +40,7 @@
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "interval": 1,
-        "format":"{:%Y-%m-%d | %H:%M:%S}"
+        "format":"{:%F %T %b|%a}"
     },
     "hyprland/window": {
         "format": "{title:.100}"
