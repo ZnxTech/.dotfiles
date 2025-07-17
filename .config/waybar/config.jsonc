@@ -43,6 +43,9 @@
         "interval": 1,
         "format":"{:%Y-%m-%d | %H:%M:%S}"
     },
+    "hyprland/window": {
+        "format": "{title:.100}"
+    },
     "cpu": {
         "format": "{usage}%  ",
         "tooltip": false
