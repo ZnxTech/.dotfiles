@@ -2,8 +2,8 @@
     // Bar config:
     "layer": "bottom",
     "position": "top",
-    "height": 40,
-    // "spacing": 5,
+    "height": 50,
+    "spacing": 8,
     "output": "DP-2",
     "margin-top": 10,
     "margin-bottom": 0,

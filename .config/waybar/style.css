@@ -41,18 +41,44 @@ window#waybar {
 	border-image: linear-gradient(178deg, #b2c6f3 0%, #396af1 100%) 1 stretch;
 	border-radius: 0px;
 	color: #a9b1d6;
-	padding: 10px;
+	padding: 0px 0px;
 } 
 
-/* Workspaces */
+/* Module theming */
+#clock,
+#language,
+#cpu,
+#memory,
+#pulseaudio,
+#tray {
+	background-color: transparent;
+	border: 2 solid #6d779b;
+	color: #a9b1d6;
+	
+}
+
+#clock {
+	margin: 10px 0px 10px 10px;
+	padding: 0px 6px;
+}
+
+#language {
+	margin: 10px 0px 10px 0px;
+	padding: 0px 6px;
+}
+
 #workspaces button {
 	/* Defualts fix */
 	background-color: transparent;
 	border: 2 solid #414868;
 	border-radius: 0px;
 	color: #414868;
-	margin: 10px 5px;
+	margin: 10px 0px 10px 0px;
 	padding: 0px 8px;
+}
+
+#workspaces button + button {
+	margin: 10px 0px 10px 8px;
 }
 
 #workspaces button:hover {
@@ -114,55 +140,29 @@ window#waybar {
 	}
 }
 
-/* Module theming */
-#language {
-	background-color: transparent;
-	border: 2 solid #6d779b;
-	color: #a9b1d6;
-	margin: 10px 5px 10px 10px;
-	padding: 0px 10px;
-}
-
-#clock {
-	background-color: transparent;
-	border: 2 solid #6d779b;
-	color: #a9b1d6;
-	margin: 10px 0px 10px 10px;
-	padding: 0px 10px;
-}
-
 #window {
 	color: #6d779b;
 }
 
-#cpu,
-#memory,
-#pulseaudio,
-#tray {
-	background-color: transparent;
-	border: 2 solid #6d779b;
-	color: #a9b1d6;
-}
-
 /* Custom padding/margins per module accounting for nerdfont */
 #cpu {
-	margin: 10px 10px 10px 0px;
-	padding: 0px 6px 0px 10px;
+	margin: 10px 0 10px 0px;
+	padding: 0px 6px;
 }
 
 #memory {
-	margin: 10px 10px 10px 0px;
-	padding: 0px 10px 0px 10px;
+	margin: 10px 0px 10px 0px;
+	padding: 0px 6px;
 }
 
 #pulseaudio {
-	margin: 10px 10px 10px 0px;
-	padding: 0px 12px 0px 10px;
+	margin: 10px 0px 10px 0px;
+	padding: 0px 6px;
 }
 
 #tray {
 	margin: 10px 10px 10px 0px;
-	padding: 0px 10px;
+	padding: 0px 6px;
 }
 
 /* Module hover theming */
