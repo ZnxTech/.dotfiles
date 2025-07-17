@@ -105,6 +105,18 @@ window#waybar {
 	transition: border 0.5s, color 0.5s;
 }
 
+/* Blinking urgent effect */
+@keyframes blinking {
+	from {
+		border: 2 solid #f04061;
+		color: #f04061;
+	}
+	to {
+		border: 2 solid #f7768e;
+		color: #f7768e;
+	}
+}
+
 #workspaces button.urgent {
 	/* Defualts fix */
     box-shadow: inherit;
@@ -126,18 +138,6 @@ window#waybar {
 	/* For some reason fixes gray blinking on hover??? */
 	border: 2 solid #f04061;
 	color: #f04061;
-}
-
-/* Blinking urgent effect */
-@keyframes blinking {
-	from {
-		border: 2 solid #f04061;
-		color: #f04061;
-	}
-	to {
-		border: 2 solid #f7768e;
-		color: #f7768e;
-	}
 }
 
 #window {
