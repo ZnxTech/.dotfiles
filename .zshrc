@@ -6,6 +6,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+PATH=$PATH:$HOME/.local/bin
 
 # Random zsh shit idk lol
 zstyle :compinstall filename '/home/znx/.zshrc'
