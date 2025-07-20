@@ -23,10 +23,15 @@
         "pulseaudio",
         "cpu",
         "memory",
-        "tray"
+        "battery",
+	"tray"
     ],
 
     // Modules:
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": [" ", " ", " ", " ", " "],
+    },
     "tray": {
         "icon-size": 25,
         "spacing": 5
